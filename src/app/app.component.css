@@ -1,0 +1,5 @@
+/* Deu espaçamento para o footer, mas não para o header. */
+.container {
+  min-height: 65vh;
+  margin-top: 1em;
+}
