@@ -1,4 +1,5 @@
 import { Component, OnInit, } from '@angular/core';
+import { MessagesService } from 'src/app/services/messages.service';
 
 @Component({
   selector: 'app-new-moment',
@@ -7,11 +8,18 @@ import { Component, OnInit, } from '@angular/core';
 })
 export class NewMomentComponent implements OnInit {
 
-  btnText ='Compartilhar';
+  btnText = 'Compartilhar';
 
-  constructor() { }
+  constructor(private messagesService: MessagesService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  createHandler(event: any) {
+    console.log(event);
+
+    this.messagesService.add(`Momento adicionado com sucesso!`);
+
   }
 
 }
