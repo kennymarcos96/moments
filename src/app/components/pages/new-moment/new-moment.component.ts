@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-new-moment',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-moment.component.css']
 })
 export class NewMomentComponent implements OnInit {
+
+  btnText ='Compartilhar';
 
   constructor() { }
 

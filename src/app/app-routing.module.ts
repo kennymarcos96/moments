@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'footer', component: FooterComponent},
   {path: 'moments/new', component: NewMomentComponent},
+
    // router redirect 404 error
   { path: '**', redirectTo: '' }
 
