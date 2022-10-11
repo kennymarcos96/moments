@@ -1,5 +1,6 @@
 import { Component, OnInit, } from '@angular/core';
 import { MessagesService } from 'src/app/services/messages.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-moment',
@@ -10,8 +11,11 @@ export class NewMomentComponent implements OnInit {
 
   btnText = 'Compartilhar';
 
-  constructor(private messagesService: MessagesService
-  ) { }
+  constructor(
+    // private momentService: MomentService,
+    private router: Router,
+    private messagesService: MessagesService
+  ) {}
 
   ngOnInit(): void { }
 
@@ -20,6 +24,7 @@ export class NewMomentComponent implements OnInit {
 
     this.messagesService.add(`Momento adicionado com sucesso!`);
 
+    this.router.navigate(['/']); // leva o Usuário para Home após compartilhar
   }
 
 }

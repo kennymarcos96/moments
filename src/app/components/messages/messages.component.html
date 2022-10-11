@@ -1,9 +1,10 @@
 <div class="message" *ngIf="messagesService.message">
   <div class="message-header">
     <h2>Mensagem do sistema:</h2>
-    <button class="clear">
+    <button class="clear" (click)="messagesService.clear()">
       <i class="fa-regular fa-circle-xmark "></i>
     </button>
   </div>
   <p> {{ messagesService.message }} P</p>
 </div>
+<!-- messagesService.clear -> limpa a mensagem do sistema -->
