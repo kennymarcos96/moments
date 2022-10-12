@@ -1,5 +1,5 @@
 export interface Moment {
-  ind?: number; // ? = opcional
+  id?: number; // ? = opcional
   title: string;
   description: string;
   image: string;

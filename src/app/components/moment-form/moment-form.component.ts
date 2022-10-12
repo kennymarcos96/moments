@@ -22,7 +22,6 @@ export class MomentFormComponent implements OnInit {
       title: new FormControl('', [Validators.required]), // validação de erro
       description: new FormControl('', [Validators.required]),
       image: new FormControl(''),
-
     });
   }
 
@@ -44,7 +43,7 @@ export class MomentFormComponent implements OnInit {
     if (this.momentForm.invalid) {
       return;
     }
-      this.onSubmit.emit(this.momentForm.value);
+    this.onSubmit.emit(this.momentForm.value);
 
   }
 }
