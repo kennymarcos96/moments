@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   padding: 0;
   margin: 0;
@@ -21,13 +26,14 @@ a:hover {
 
 .edit-btn,
 .remove-btn {
-  border: 1px solid #efefef;
+  border: 1px solid #efefef ;
   padding: 0.4em 1em;
   font-size: 1em;
   margin: 0 0.5em;
   cursor: pointer;
   background-color: #fff;
   transition: 0.4s;
+  line-height: normal;
 }
 
 button fa-icon,
@@ -107,8 +113,3 @@ input[type="submit"]:hover {
   border-left: 3px solid #dc3545;
   padding-left: 0.2em;
 }
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
