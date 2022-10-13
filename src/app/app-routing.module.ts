@@ -15,8 +15,7 @@ const routes: Routes = [
   { path: 'moments/edit/:id', component: EditMomentComponent },
   { path: 'moments/:id', component: MomentsComponent },
 
-  // router redirect 404 error
-  // { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' }
 
 
 
