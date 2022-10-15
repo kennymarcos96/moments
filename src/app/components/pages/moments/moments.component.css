@@ -18,16 +18,14 @@ img {
 
 .about-moment,
 .actions {
-  text-align: center;
   padding-bottom: 1em;
-  /* retirar linha cinza  abaixo btn editar e remover*/
-  /* border-bottom: 1px solid #ccc; */
+  border-bottom: 1px solid #ccc;
   padding: 1.2em;
 }
 
-/* .actions {
+.actions {
   background-color: #eee;
-} */
+}
 
 .comments {
   margin-bottom: 1em;
@@ -68,4 +66,3 @@ img {
 .author span {
   font-weight: bold;
 }
-

@@ -16,7 +16,7 @@ export class NewMomentComponent implements OnInit {
     private momentService: MomentService,
     private router: Router,
     private messagesService: MessagesService
-  ) {}
+  ) { }
 
   ngOnInit(): void { }
 
@@ -29,10 +29,10 @@ export class NewMomentComponent implements OnInit {
       formData.append(key, event[key]);
     });
 
-    this.momentService.createMoment(formData).toPromise().then((response:any) => {
+    this.momentService.createMoment(formData).toPromise().then((response: any) => {
       console.log(response);
       this.messagesService.add(response.message);
-      this.router.navigate(['/']);
+      // this.router.navigate(['/']);
     });
   }
 
